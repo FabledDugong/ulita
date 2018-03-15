@@ -1,0 +1,21 @@
+{% extends "main/extends/init.html" %}
+{% block content %}
+<section id="blog">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-1">
+                <nav id="menu">
+                    <a href="/blog/"><img src="../../../static/img/ico/back.svg" alt="menu" class="navIcon"></a>
+                </nav>
+            </div>
+            <div class="col-xl-5">
+                <div id="postView">
+                    <h3>{{ post.title }}</h3>
+                    <h4>{{ post.category }} / {{ post.date|date:"d.m.Y" }}</h4>
+                    <p>{{ post.content|safe|linebreaks }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

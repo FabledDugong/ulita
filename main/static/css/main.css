@@ -1,0 +1,183 @@
+@font-face {
+  src: url("../font/Dosis-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-family: "Dosis-Regular"; }
+@font-face {
+  src: url("../font/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-family: "Roboto"; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none !important;
+  color: inherit !important; }
+
+html {
+  width: 100% !important;
+  height: 100%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -moz-box-sizing: border-box; }
+
+@-ms-viewport {
+  width: device-width; }
+.container-full {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .container-full .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .container-full div[class*='col-'] {
+    padding-left: 0;
+    padding-right: 0; }
+
+.container > .container-full {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+body {
+  height: 100vh;
+  overflow-x: hidden !important;
+  font-family: "Roboto", sans-serif; }
+
+section {
+  height: 100vh;
+  padding: 5vmin;
+  background: #231f20;
+  color: #F9E1B7; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1vmin 0 1vmin 0;
+  font-family: "Dosis-Regular", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5vmin; }
+
+h1 {
+  font-size: 6vmin; }
+
+h2 {
+  font-size: 4vmin;
+  color: #f2f2f2; }
+
+h3 {
+  font-size: 4vmin; }
+
+h4 {
+  font-size: 2vmin;
+  text-transform: lowercase;
+  color: #f2f2f2; }
+
+p, address {
+  font-size: 3vmin;
+  letter-spacing: 0.1vmin;
+  color: #f2f2f2; }
+
+a:hover {
+  -webkit-transition: ease 0.25s;
+  -moz-transition: ease 0.25s;
+  -ms-transition: ease 0.25s;
+  -o-transition: ease 0.25s;
+  transition: ease 0.25s;
+  color: #f2f2f2 !important; }
+a:not(:hover) {
+  -webkit-transition: ease 0.25s;
+  -moz-transition: ease 0.25s;
+  -ms-transition: ease 0.25s;
+  -o-transition: ease 0.25s;
+  transition: ease 0.25s;
+  color: #F9E1B7 !important; }
+
+.logo {
+  width: 10vmin; }
+
+.navIcon {
+  width: 6vmin; }
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #000;
+  /*@include image-full("../img/content/ulita_blur.jpg") */
+  text-align: center;
+  color: #F9E1B7; }
+  #banner #nav {
+    -webkit-transform: translateY(30vh);
+    -moz-transform: translateY(30vh);
+    -ms-transform: translateY(30vh);
+    -o-transform: translateY(30vh);
+    transform: translateY(30vh); }
+    #banner #nav ul li {
+      margin: 0 4vmin 0 4vmin;
+      display: inline-block;
+      font-family: "Dosis-Regular", sans-serif;
+      font-size: 3vmin;
+      text-transform: uppercase; }
+
+#blog .postPreview {
+  margin: 0 0 5vmin 0; }
+#blog #postsNavigation {
+  font-size: 5vmin; }
+  #blog #postsNavigation span {
+    margin: 0 3vmin 0 0; }
+#blog #postView p {
+  margin: 5vmin 0 0 0; }
+
+#about h3, #contact h3 {
+  margin: 0 0 4vmin 0; }
+#about .infoBlock, #contact .infoBlock {
+  margin: 0 0 10vmin 0; }
+
+#gallery {
+  padding: 0; }
+  #gallery #exposition .expositionImage {
+    height: 100vh; }
+  #gallery #exposition #image1 {
+    background: url("../img/content/ulita_keramika.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image2 {
+    background: url("../img/content/ulita_ulity.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image3 {
+    background: url("../img/content/ulita_keramika2.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image4 {
+    background: url("../img/content/ulita_stetce.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image5 {
+    background: url("../img/content/ulita_musle.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image6 {
+    background: url("../img/content/ulita_keramika3.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image7 {
+    background: url("../img/content/ulita_ulita.jpg") no-repeat center center/cover; }
+  #gallery #exposition #image8 {
+    background: url("../img/content/zahrada_kocka.jpg") no-repeat center center/cover; }
+
+/*# sourceMappingURL=main.css.map */

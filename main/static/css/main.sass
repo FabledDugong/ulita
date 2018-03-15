@@ -1,0 +1,115 @@
+@import "variables"
+@import "mixins"
+@import "reset"
+
+.container-full
+  padding-top: 0
+  padding-bottom: 0
+  .row
+    margin-left: 0
+    margin-right: 0
+  div[class*='col-']
+    padding-left: 0
+    padding-right: 0
+.container > .container-full
+  margin-left: -15px
+  margin-right: -15px
+
+body
+  height: 100vh
+  overflow-x: hidden !important
+  font-family: $contentFont
+section
+  height: 100vh
+  padding: 5vmin
+  background: $backgroundColor
+  color: $primaryColor
+h1,h2,h3,h4,h5,h6
+  margin: 1vmin 0 1vmin 0
+  font-family: $titleFont
+  text-transform: uppercase
+  letter-spacing: 0.5vmin
+h1
+  font-size: 6vmin
+h2
+  font-size: 4vmin
+  color: $secondaryColor
+h3
+  font-size: 4vmin
+h4
+  font-size: 2vmin
+  text-transform: lowercase
+  color: $secondaryColor
+p, address
+  font-size: 3vmin
+  letter-spacing: 0.1vmin
+  color: $secondaryColor
+a
+  &:hover
+    @include ease-hover
+    color: $secondaryColor !important
+  &:not(:hover)
+    @include ease-hover
+    color: $primaryColor !important
+.logo
+  width: 10vmin
+.navIcon
+  width: 6vmin
+#banner
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+  background: #000
+  /*@include image-full("../img/content/ulita_blur.jpg")*/
+  text-align: center
+  color: $primaryColor
+  #nav
+    -webkit-transform: translateY(30vh)
+    -moz-transform: translateY(30vh)
+    -ms-transform: translateY(30vh)
+    -o-transform: translateY(30vh)
+    transform: translateY(30vh)
+    ul li
+      margin: 0 4vmin 0 4vmin
+      display: inline-block
+      font-family: $titleFont
+      font-size: 3vmin
+      text-transform: uppercase
+#blog
+  .postPreview
+    margin: 0 0 5vmin 0
+  #postsNavigation
+    font-size: 5vmin
+    span
+      margin: 0 3vmin 0 0
+  #postView
+    p
+      margin: 5vmin 0 0 0
+#about,#contact
+  h3
+    margin: 0 0 4vmin 0
+  .infoBlock
+    margin: 0 0 10vmin 0
+
+#gallery
+  padding: 0
+  #exposition
+    .expositionImage
+      height: 100vh
+    #image1
+      @include image-full("../img/content/ulita_keramika.jpg")
+    #image2
+      @include image-full("../img/content/ulita_ulity.jpg")
+    #image3
+      @include image-full("../img/content/ulita_keramika2.jpg")
+    #image4
+      @include image-full("../img/content/ulita_stetce.jpg")
+    #image5
+      @include image-full("../img/content/ulita_musle.jpg")
+    #image6
+      @include image-full("../img/content/ulita_keramika3.jpg")
+    #image7
+      @include image-full("../img/content/ulita_ulita.jpg")
+    #image8
+      @include image-full("../img/content/zahrada_kocka.jpg")

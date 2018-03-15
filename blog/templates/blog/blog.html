@@ -1,0 +1,30 @@
+{% extends "main/extends/init.html" %}
+{% block content %}
+    <section id="blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-1">
+                    <nav id="menu">
+                        <img src="../../../static/img/ico/menu.svg" alt="menu" class="navIcon">
+                    </nav>
+                </div>
+                <div class="col-xl-5">
+                    <div id="postsList">
+                        {% block postsList %}
+                            {% for post in object_list %}
+                                <div class="postPreview">
+                                    <h3><a href="/blog/{{ post.id }}">{{ post.title }}</a></h3>
+                                    <h4>{{ post.category }} / {{ post.date|date:"d.m.Y" }}</h4>
+                                </div>
+                            {% endfor %}
+                        {% endblock %}
+                    </div>
+                    <div id="postsNavigation">
+                        <span><a href="">&and;</a></span>
+                        <span><a href="">&or;</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
